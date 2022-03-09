@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset4" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-dA-4gI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="KTc-ik-xAf">
+                                <rect key="frame" x="30" y="64" width="354" height="798"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punaje: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4r-hB-KnF">
+                                        <rect key="frame" x="27" y="0.0" width="300" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6Zg-wE-9Fg"/>
+                                            <constraint firstAttribute="width" constant="300" id="I21-qd-Tlh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Berlìn es la capital de Alemania?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIO-3v-5eT">
+                                        <rect key="frame" x="46.5" y="80" width="261" height="413"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <color key="textColor" white="0.98287671229999996" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aH-nM-2N3">
+                                        <rect key="frame" x="27" y="533" width="300" height="50"/>
+                                        <color key="backgroundColor" white="0.98287671229999996" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="RGt-Gj-Mxw"/>
+                                            <constraint firstAttribute="height" constant="50" id="Rwr-wf-oKc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="Verdadero"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="respuestaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuY-lM-w5k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30d-Aw-0xU">
+                                        <rect key="frame" x="27" y="623" width="300" height="50"/>
+                                        <color key="backgroundColor" white="0.98287671229999996" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GQW-XH-VPX">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="300" id="wEo-9h-U1e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="Falso"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="respuestaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OP4-Ap-65d"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progreso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg4-tz-RPg">
+                                        <rect key="frame" x="27" y="713" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="iOh-cJ-aGO"/>
+                                            <constraint firstAttribute="height" constant="30" id="w3i-rh-zHf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KfN-ZT-8jU">
+                                        <rect key="frame" x="27" y="783" width="300" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="tUY-IC-UIZ"/>
+                                            <constraint firstAttribute="height" constant="15" id="ztB-gi-beq"/>
+                                        </constraints>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KTc-ik-xAf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="1KX-05-bWm"/>
+                            <constraint firstAttribute="trailing" secondItem="KTc-ik-xAf" secondAttribute="trailing" constant="30" id="73Y-qo-Oau"/>
+                            <constraint firstAttribute="trailing" secondItem="hMl-dA-4gI" secondAttribute="trailing" id="K6x-dU-6Sh"/>
+                            <constraint firstItem="hMl-dA-4gI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rt2-iC-46D"/>
+                            <constraint firstItem="KTc-ik-xAf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="StY-LQ-erX"/>
+                            <constraint firstItem="hMl-dA-4gI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jxR-8P-NBJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KTc-ik-xAf" secondAttribute="bottom" id="wS7-as-eGO"/>
+                            <constraint firstAttribute="bottom" secondItem="hMl-dA-4gI" secondAttribute="bottom" id="x8C-Oh-DHM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barraProgreso" destination="KfN-ZT-8jU" id="I8g-SX-17v"/>
+                        <outlet property="falsoButton" destination="30d-Aw-0xU" id="ctb-I2-9fE"/>
+                        <outlet property="preguntaLabel" destination="KIO-3v-5eT" id="1Ms-21-7Jd"/>
+                        <outlet property="puntajeLbl" destination="R4r-hB-KnF" id="hMc-yg-uoY"/>
+                        <outlet property="verdaderoButton" destination="2aH-nM-2N3" id="d4T-iM-LlZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunset4" width="1000" height="2165"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
