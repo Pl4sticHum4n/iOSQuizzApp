@@ -58,7 +58,6 @@ class ViewController: UIViewController {
         } else {
             let alerta = UIAlertController(title: "Quizz terminado", message: "¡Obtuviste \(aciertos) aciertos!", preferredStyle: .alert)
             let actionOut = UIAlertAction(title: "Salir", style: .destructive){_ in
-                print("Salir del Quizz")
                 exit(0)
             }
             let actionNg = UIAlertAction(title: "Jugar de nuevo", style: .default){_ in
